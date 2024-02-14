@@ -1,6 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import Tilt from "react-parallax-tilt";
 import homeLogo from "../../Assets/home-main.svg";
+import pic from "../../Assets/Chris.png"
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
@@ -12,6 +14,11 @@ function Home() {
         <Particle />
         <Container className="home-content">
           <Row>
+          <Col md={4} className="myAvtar">
+            <Tilt>
+              <img src={pic} className="img-fluid" alt="avatar" />
+            </Tilt>
+          </Col>
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
                 Hi There!{" "}
